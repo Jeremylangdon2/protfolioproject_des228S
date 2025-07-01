@@ -138,11 +138,6 @@ html, body {
   font-family: "Lato", sans-serif;
 }
 
-/* .bio-box {
-  color: #1b1b1b;
-  margin: 0 0 2px 0;
-} */
-
 .bio-box {
   font-size: 24px;
   font-weight: 700;
@@ -150,17 +145,6 @@ html, body {
   margin-bottom: 30px;
   font-family: "Lato", sans-serif;
 }
-
-/* .bio-text {
-    font-size: 12pt;
-  margin: 0;
-  max-width: 600px;
-  line-height: 1.3;
-  margin: 0 0 10px 0;
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-} */
 
 .bio-text {
   font-size: 16px;
