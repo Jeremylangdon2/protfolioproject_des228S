@@ -1,0 +1,576 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.about-page .bio-section {
+  margin-top: 70px;
+  padding-top: 0;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+
+main {
+  flex: 1;
+}
+
+html, body {
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.left-header {
+  display: flex;
+  align-items: center;
+}
+
+ .small-profile {     /*gif icon top left */
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.head-name {
+  color: #000000;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  position: relative;
+}
+
+.top-nav a {
+ margin-left: 20px;
+  text-decoration: none;
+  color: #000000;
+   font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  position: relative;
+  transition: transform 0.9s;
+  display: inline-block ;
+}
+
+.top-nav a:hover {
+  /* text-decoration: underline;  */
+   transform: scale(1.1);
+}
+
+
+.profile-pic img {
+  width: 580px;
+  height: 580px;
+  transition: transform 3s;
+  margin-top: 70px;
+}
+
+.profile-pic img:hover {
+  transform: scale(1.4);
+}
+
+.bio-section {
+  padding: 60px 20px;
+  max-width: 800px;
+  text-align: left;
+}
+
+.bio-box {
+    font-size: 18pt;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+
+
+.nav-buttons {
+  display: flex;
+  margin-top: 10px; /* spacing below the bio */
+  justify-content: flex-start; /* align left */
+  gap: 2px;
+  padding-left: 14px;
+}
+
+.footer {
+  padding: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.footer a {
+ text-decoration: none;
+ color: #000;
+}
+#container {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+  gap: 40px;
+  /* padding-top: 90px; */
+}
+
+.bio-name {
+  font-size: 48px;
+  font-weight: 900;
+  margin-bottom: 10px;
+  color: #1b1b1b;
+  font-family: "Lato", sans-serif;
+}
+
+/* .bio-box {
+  color: #1b1b1b;
+  margin: 0 0 2px 0;
+} */
+
+.bio-box {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 30px;
+  font-family: "Lato", sans-serif;
+}
+
+/* .bio-text {
+    font-size: 12pt;
+  margin: 0;
+  max-width: 600px;
+  line-height: 1.3;
+  margin: 0 0 10px 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+} */
+
+.bio-text {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444;
+  max-width: 600px;
+  text-align: left;
+  font-family: "Lato", sans-serif;
+}
+
+.nav-gif {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.bio-content {
+  position: relative;
+  /* top: 59px; */
+  margin-top: 59px;
+}
+
+.about-page .clouds-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200px; 
+  z-index: -1;
+  overflow: hidden;
+}
+
+.about-page .clouds-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  object-position: top;
+}
+.icon-link {         /*layout alignment and position of Icon containers */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  margin: 0 -15px; 
+}
+
+
+.nav-icon {        /* Behance and linkdin position and size */
+  font-size: 30px;
+  width: 80px;
+  height: 80px;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  align-items: flex-start;
+padding-top: 8px; 
+}
+
+
+
+
+/*contact page css*/
+
+
+.contact-page .contact-container {   /* contact page is body class*/
+  display: flex;            /* flex and column vertical layout*/
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;         /* relative position but now movable with css */
+  z-index: 1;           /*z index for above video */
+  padding: 60px 20px 40px;
+  max-width: 800px;
+  margin: 0 auto;   /* centers element container */
+  margin-top: 40px;
+}
+
+.contact-page .bio-name {
+  margin-bottom: 20px;  /*move element below down */
+  margin-top: 40px;
+}
+
+.contact-page .bio-text {            /* spacing and width of text and page, only affecting bio text with contact page*/
+  margin-top: 0;
+  margin-bottom: 20px;
+  max-width: 600px;
+}
+
+.contact-page .contact-form {    /* width and positioning of contact containers */
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 19px;
+}
+
+.contact-page .contact-form input,             /*Selecting input and textarea*/
+.contact-page .contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  font-size: 1rem;
+}
+
+.contact-page .contact-form button {
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-page .nav-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 0px;
+}
+
+.contact-page .contact-page-clouds {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 240px; /* or match your layout */
+  z-index: -1;
+  overflow: hidden;
+}
+
+.contact-page .contact-page-clouds img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  object-position: top center; /* adjust if needed */
+  display: block;
+}
+
+/* ------------------Inspiration page ----------------------*/
+
+.inspiration-page {
+  font-family: "Lato", sans-serif;
+}
+
+
+.inspiration-page .inspiration-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.inspiration-page .page-title {
+  font-size: 64px;
+  margin-bottom: 60px;
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+
+.inspiration-page .inspo-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 80px;
+  align-items: flex-start;
+}
+
+.inspiration-page .inspo-item.reverse {
+  flex-direction: row-reverse;
+}
+
+.inspiration-page .inspo-item img {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  flex-shrink: 0
+}
+
+.inspiration-page .inspo-text {
+  flex: 1 1 300px;
+}
+
+.inspiration-page .inspo-text h2 {
+  font-size: 28px;
+  font-weight: 900;
+  margin-bottom: 12px;
+  color: #1b1b1b;
+}
+
+.inspiration-page .inspo-text p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 12px;
+  color: #333;
+  max-width: 600px;
+}
+
+.inspiration-page .inspo-text a {
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+}
+
+.inspiration-page .inspo-text a:hover {
+  text-decoration: underline;
+}
+
+
+/*----------Lists Css-------------*/
+
+.lists-page .header {
+  background-color: #19191a;
+  position: fixed;
+}
+
+.learn-more {
+display: inline-block;
+  margin-left: 5px;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.5s, text-decoration 0.5s;
+}
+
+
+.learn-more:hover {
+ color: #169475;
+  text-decoration: underline;
+}
+
+.lists-page .top-nav a{
+  color: #f4f4f4;
+}
+
+.lists-page .head-name {
+  color: #fcfcfc;
+}
+
+.lists-page {
+  background-color:  #f4f4f4; 
+}
+
+.lists-page .lists-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 40px;
+  font-family: "Lato", sans-serif;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.lists-page .page-title {
+  font-size: 64px;
+  margin-bottom: 60px;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  margin-top: 100px;
+}
+
+.lists-top {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin-bottom: 100px;
+}
+
+.lists-top .text-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Lato", sans-serif;
+}
+
+.lists-top .text-block h2 {
+  font-size: 24px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.lists-top h2 {
+  text-align: center;
+}
+
+.lists-top .square-item p {
+  width: 80%;   /*text width */
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.music5 {
+ grid-column: 1 / -1;          
+  display: flex;
+  flex-direction: column;
+  align-items: center;          
+      
+}
+
+.music5 .square-item img {
+  max-width: 39%;
+  height: auto;
+}
+
+.music5 p {
+max-width: 39%;
+}
+
+.lists-top .text-block p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.square-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  font-family: "Lato", sans-serif;
+  font-weight: 400; 
+}
+
+.square-item img {
+  width: 80%;     /*image width */
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  /* border-radius: 8px; for circles*/  
+}
+
+.square-item h4 {
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.square-item.large {
+  width: 100%;
+}
+
+.square-item.small {
+  width: 400px;
+  margin-top: 40px;
+}
+.lists-page .page-title {
+  text-align: center;
+}
+
+
+/* bottom Concert Section (horizontal row) */
+.lists-bottom {
+  margin-top: 80px;
+  font-family: "Lato", sans-serif;
+}
+
+.lists-bottom h2 {
+  font-size: 24px;
+  font-weight: 900;
+  margin-bottom: 24px;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+}
+
+.bottom-row {
+  display: flex;
+  flex-wrap: wrap;                
+  justify-content: space-between; 
+  gap: 32px;                      
+  padding: 0 10px;                
+}
+
+
+.bottom-row .square-item {
+  width: 190px;                   
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+
+
+.bottom-row .square-item img {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.bottom-row .square-item h4 {
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.bottom-row .square-item p {
+  font-size: 14px;
+  margin-top: 4px;
+  color: #333;
+  line-height: 1.4;
+}
+
+.section-subheading {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
+  color: #333;
+  margin-bottom: 40px;
+  margin-top: -20px;
+  text-align: center;
+}
